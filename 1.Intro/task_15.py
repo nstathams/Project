@@ -1,4 +1,4 @@
-def is_leap_year(year):
+def year_(year):
     if year % 400 == 0:
         return True
     if year % 100 == 0:
@@ -6,10 +6,10 @@ def is_leap_year(year):
     if year % 4 == 0:
         return True
     return False
-def days_in_month(month, year):
+def daysmonth(month, year):
     days = {
         1: 31,  # Январь
-        2: 29 if is_leap_year(year) else 28,  # Февраль
+        2: 29 if year_(year) else 28,  # Февраль
         3: 31,  # Март
         4: 30,  # Апрель
         5: 31,  # Май
@@ -24,7 +24,7 @@ def days_in_month(month, year):
     if month in days:
         return days[month]
     else:
-        return "Неверный номер месяца"
-month = int(input("Введите номер месяца (1-12): "))
+        return "Месяц введен неправильно!!!!!!!!!!!"
+month = int(input("Введите номер месяца от 1 до 12: "))
 year = int(input("Введите год: "))
-print(days_in_month(month, year))
+print(daysmonth(month, year))
