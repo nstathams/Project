@@ -38,11 +38,4 @@ def find_anagrams_for_random_word(method_func):
 find_anagrams_for_random_word(is_anagram_method1)
 find_anagrams_for_random_word(is_anagram_method2)
 find_anagrams_for_random_word(is_anagram_method3)
-find_anagrams_for_random_word(is_anagram_method4)distance_1 = int(input("Введите километры: "))
-distance_2 = int(input("Введите метры: "))
-distance_1 = distance_1*1000
-if distance_1>distance_2:
-    print(distance_2, 'метра(ов)')
-else:
-
-    print(distance_1, 'метра(ов)')
+find_anagrams_for_random_word(is_anagram_method4)
